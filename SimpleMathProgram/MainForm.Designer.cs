@@ -47,6 +47,7 @@ namespace SimpleMathProgram
 			this.btnDividir = new System.Windows.Forms.Button();
 			this.lblResultado = new System.Windows.Forms.Label();
 			this.btnModulo = new System.Windows.Forms.Button();
+			this.btnAvanzados = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
 			// label1
@@ -55,7 +56,7 @@ namespace SimpleMathProgram
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(138, 23);
 			this.label1.TabIndex = 0;
-			this.label1.Text = "SimpleMath V2.0.1";
+			this.label1.Text = "SimpleMath V3.0";
 			// 
 			// label2
 			// 
@@ -145,11 +146,22 @@ namespace SimpleMathProgram
 			this.btnModulo.UseVisualStyleBackColor = true;
 			this.btnModulo.Click += new System.EventHandler(this.BtnModuloClick);
 			// 
+			// btnAvanzados
+			// 
+			this.btnAvanzados.Location = new System.Drawing.Point(13, 239);
+			this.btnAvanzados.Name = "btnAvanzados";
+			this.btnAvanzados.Size = new System.Drawing.Size(100, 27);
+			this.btnAvanzados.TabIndex = 11;
+			this.btnAvanzados.Text = "Avanzados";
+			this.btnAvanzados.UseVisualStyleBackColor = true;
+			this.btnAvanzados.Click += new System.EventHandler(this.BtnAvanzadosClick);
+			// 
 			// MainForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(311, 231);
+			this.ClientSize = new System.Drawing.Size(311, 278);
+			this.Controls.Add(this.btnAvanzados);
 			this.Controls.Add(this.btnModulo);
 			this.Controls.Add(this.lblResultado);
 			this.Controls.Add(this.btnDividir);
@@ -162,10 +174,11 @@ namespace SimpleMathProgram
 			this.Controls.Add(this.label2);
 			this.Controls.Add(this.label1);
 			this.Name = "MainForm";
-			this.Text = "SimpleMath V2.0.1";
+			this.Text = "SimpleMath V3.0";
 			this.ResumeLayout(false);
 			this.PerformLayout();
 		}
+		private System.Windows.Forms.Button btnAvanzados;
 		private System.Windows.Forms.Button btnModulo;
 		private System.Windows.Forms.Label lblResultado;
 		private System.Windows.Forms.Button btnDividir;

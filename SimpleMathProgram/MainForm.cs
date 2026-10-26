@@ -64,5 +64,13 @@ namespace SimpleMathProgram
 			modulo = double.Parse(txtNumero1.Text)%double.Parse(txtNumero2.Text);
 			lblResultado.Text = "El resultado de la operacion en modulo es: " + modulo.ToString();
 		}
+		
+		void BtnAvanzadosClick(object sender, EventArgs e)
+		{
+			frmAvanzados Avanzados = new frmAvanzados();
+			Avanzados.Show();
+			this.Hide();
+			
+		}
 	}
 }
