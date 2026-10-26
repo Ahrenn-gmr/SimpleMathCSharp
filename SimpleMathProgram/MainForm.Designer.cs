@@ -46,6 +46,7 @@ namespace SimpleMathProgram
 			this.btnMult = new System.Windows.Forms.Button();
 			this.btnDividir = new System.Windows.Forms.Button();
 			this.lblResultado = new System.Windows.Forms.Label();
+			this.btnModulo = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
 			// label1
@@ -54,7 +55,7 @@ namespace SimpleMathProgram
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(138, 23);
 			this.label1.TabIndex = 0;
-			this.label1.Text = "SimpleMath V1.0";
+			this.label1.Text = "SimpleMath V2.0.1";
 			// 
 			// label2
 			// 
@@ -128,17 +129,28 @@ namespace SimpleMathProgram
 			// 
 			// lblResultado
 			// 
-			this.lblResultado.Location = new System.Drawing.Point(51, 143);
+			this.lblResultado.Location = new System.Drawing.Point(13, 140);
 			this.lblResultado.Name = "lblResultado";
-			this.lblResultado.Size = new System.Drawing.Size(100, 23);
+			this.lblResultado.Size = new System.Drawing.Size(188, 66);
 			this.lblResultado.TabIndex = 9;
 			this.lblResultado.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+			// 
+			// btnModulo
+			// 
+			this.btnModulo.Location = new System.Drawing.Point(224, 196);
+			this.btnModulo.Name = "btnModulo";
+			this.btnModulo.Size = new System.Drawing.Size(75, 23);
+			this.btnModulo.TabIndex = 10;
+			this.btnModulo.Text = "%";
+			this.btnModulo.UseVisualStyleBackColor = true;
+			this.btnModulo.Click += new System.EventHandler(this.BtnModuloClick);
 			// 
 			// MainForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(311, 198);
+			this.ClientSize = new System.Drawing.Size(311, 231);
+			this.Controls.Add(this.btnModulo);
 			this.Controls.Add(this.lblResultado);
 			this.Controls.Add(this.btnDividir);
 			this.Controls.Add(this.btnMult);
@@ -150,10 +162,11 @@ namespace SimpleMathProgram
 			this.Controls.Add(this.label2);
 			this.Controls.Add(this.label1);
 			this.Name = "MainForm";
-			this.Text = "SimpleMath V1.0";
+			this.Text = "SimpleMath V2.0.1";
 			this.ResumeLayout(false);
 			this.PerformLayout();
 		}
+		private System.Windows.Forms.Button btnModulo;
 		private System.Windows.Forms.Label lblResultado;
 		private System.Windows.Forms.Button btnDividir;
 		private System.Windows.Forms.Button btnMult;
